@@ -1,0 +1,114 @@
+ /* Calculator styles */
+body {
+    background-color: #212121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .calculator {
+    background-color: #6a5e5e;
+    border-radius: 8px;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(255, 154, 154, 0.1);
+  }
+  
+  .calculator-display {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: right;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .calculator-keys button {
+    background-color: #ec9797;
+    border: none;
+    border-radius: 4px;
+    padding: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(255, 48, 48, 0.1);
+    transition: background-color 0.3s ease;
+    position: relative;
+    animation: rainbow 4s linear infinite;
+  }
+  
+  .calculator-keys button:hover {
+    background-color: #36f1fb;
+  }
+  
+  .calculator-keys button.blink {
+    animation: blink 0.3s infinite;
+  }
+  
+  .calculator-keys button.operator {
+    background-color: #5f7aff;
+    color: #fff;
+  }
+  
+  .calculator-keys button.operator:hover {
+    background-color: #d9bf25;
+  }
+  @keyframes rainbow {
+    0% {
+      background-color: rgb(226, 154, 154);
+    }
+    14% {
+      background-color: rgb(248, 219, 167);
+    }
+    28% {
+      background-color: rgb(255, 255, 186);
+    }
+    42% {
+      background-color: rgb(198, 255, 198);
+    }
+    57% {
+      background-color: rgb(165, 165, 246);
+    }
+    71% {
+      background-color: rgb(208, 171, 235);
+    }
+    85% {
+      background-color: rgb(236, 175, 236);
+    }
+    100% {
+      background-color: rgb(226, 159, 159);
+    }
+  }
+  
+  @keyframes blink {
+    0% {
+      background-color: #fff;
+    }
+    50% {
+      background-color: #f5f5f5;
+    }
+    100% {
+      background-color: #fff;
+    }
+  }
+  
+  
+  @keyframes blink {
+    0% {
+      background-color: #fff;
+    }
+    50% {
+      background-color: #f5f5f5;
+    }
+    100% {
+      background-color: #fff;
+    }
+  }
+  
